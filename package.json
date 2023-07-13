@@ -1,13 +1,17 @@
 {
-  "name": "next-standalone",
+  "scripts": {
+    "edgio:dev": "npm --prefix nested-folder/app run edgio:dev",
+    "edgio:build": "npm --prefix nested-folder/app run edgio:build",
+    "edgio:deploy": "npm --prefix nested-folder/app run edgio:deploy",
+    "edgio:prod": "npm --prefix nested-folder/app run edgio:prod",
+    "dev": "next dev nested-folder/app",
+    "build": "next build nested-folder/app",
+    "start": "next start nested-folder/app",
+    "lint": "next lint nested-folder/app"
+  },
+  "name": "next-standalone-root",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "@types/node": "20.4.2",
     "@types/react": "18.2.14",
@@ -18,5 +22,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@edgio/cli": "^7.0.26",
+    "@edgio/core": "^7.0.26",
+    "@edgio/devtools": "^7.0.26",
+    "@edgio/next": "^7.0.26",
+    "@edgio/prefetch": "^7.0.26",
+    "@edgio/react": "^7.0.26"
   }
 }

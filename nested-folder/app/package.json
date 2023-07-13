@@ -1,0 +1,11 @@
+{
+  "name": "next-standalone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy",
+    "edgio:prod": "edgio run --production"
+  }
+}
